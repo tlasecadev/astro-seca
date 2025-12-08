@@ -1,19 +1,8 @@
 ---
-import "../styles/global.css";
-import Header from "../components/molecules/Header.astro";
+import Intro from "../components/atoms/Intro.astro";
+import Layout from "../layouts/BaseLayout.astro";
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <title>Seca Services LLC</title>
-  </head>
-  <body>
-    <main class="p-4 md:p-12 lg:p-20">
-      <Header />
-    </main>
-  </body>
-</html>
+<Layout>
+	<Intro text="Automotive paint booth and shop services for the tri-state area." />
+</Layout>

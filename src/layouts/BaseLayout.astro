@@ -1,0 +1,26 @@
+---
+import "../styles/global.css";
+import "@fontsource/ibm-plex-mono";
+import Header from "../components/organisms/Header.astro";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Seca Services LLC</title>
+  </head>
+  <body>
+    <main class="p-8 sm:p-12 md:p-16 lg:p-20">
+      <Header />
+      <!-- content -->
+      <article class="my-12 md:my-20 flex flex-col items-center min-h-screen">
+        <slot />
+      </article>
+      <!-- end content -->
+      <!-- <Footer {...footer} /> -->
+    </main>
+  </body>
+</html>
