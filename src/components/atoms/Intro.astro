@@ -1,9 +1,12 @@
 ---
+import Container from "../atoms/Container.astro";
 const { text } = Astro.props;
 ---
 
-<div
-  class="text-3xl sm:text-4xl md:text-6xl lg:text-7xl xl:text-8xl font-mono leading-snug text-center max-w-[24ch] text-pretty"
->
-  {text}
-</div>
+<Container>
+  <div
+    class="text-3xl sm:text-4xl md:text-6xl lg:text-7xl xl:text-8xl font-mono leading-snug text-center max-w-[24ch] text-pretty"
+  >
+    {text}
+  </div>
+</Container>
