@@ -2,6 +2,7 @@
 import "../styles/global.css";
 import "@fontsource/ibm-plex-mono";
 import Header from "../components/organisms/Header.astro";
+import Footer from "../components/organisms/Footer.astro";
 ---
 
 <html lang="en">
@@ -13,14 +14,14 @@ import Header from "../components/organisms/Header.astro";
     <title>Seca Services LLC</title>
   </head>
   <body>
-    <main class="p-8 sm:p-12 md:p-16 lg:p-20">
+    <main class="bg-blue-800">
       <Header />
       <!-- content -->
       <article class="my-12 md:my-20 flex flex-col items-center min-h-screen">
         <slot />
       </article>
       <!-- end content -->
-      <!-- <Footer {...footer} /> -->
+      <Footer />
     </main>
   </body>
 </html>
