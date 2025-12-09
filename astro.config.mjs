@@ -11,11 +11,12 @@ export default defineConfig({
   },
 
   integrations: [
-    react(),
     sanity({
       projectId: "x9e0p8hx",
       dataset: "production",
       useCdn: false,
+      apiVersion: "2025-01-28",
     }),
+    react(),
   ],
 });
