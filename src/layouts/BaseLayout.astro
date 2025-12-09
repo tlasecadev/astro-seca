@@ -3,6 +3,7 @@ import "../styles/global.css";
 import "@fontsource/ibm-plex-mono";
 import Header from "../components/organisms/Header.astro";
 import Footer from "../components/organisms/Footer.astro";
+import Waves from "../components/organisms/Waves";
 ---
 
 <html lang="en">
@@ -14,7 +15,7 @@ import Footer from "../components/organisms/Footer.astro";
     <title>Seca Services LLC</title>
   </head>
   <body>
-    <main class="bg-blue-800">
+    <main>
       <Header />
       <!-- content -->
       <article class="my-12 md:my-20 flex flex-col items-center min-h-screen">
@@ -22,6 +23,7 @@ import Footer from "../components/organisms/Footer.astro";
       </article>
       <!-- end content -->
       <Footer />
+      <Waves />
     </main>
   </body>
 </html>

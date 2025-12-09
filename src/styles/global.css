@@ -11,6 +11,8 @@
 @theme {
   --font-mono: "IBM Plex Mono", monospace;
   --font-heading: "Reglo", sans-serif;
+  --color-blue: #01469d;
+  --color-black: #131313;
 }
 
 body {
