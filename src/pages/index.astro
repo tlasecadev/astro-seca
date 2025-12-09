@@ -1,12 +1,17 @@
 ---
-import Intro from "../components/atoms/Intro.astro";
 import Layout from "../layouts/BaseLayout.astro";
+import Intro from "../components/atoms/Intro.astro";
+import Services from "../components/molecules/Services.astro";
 import { sanityClient } from "sanity:client";
 import homeQuery from "../lib/sanity/queries/homeQuery";
 
 const homepage = await sanityClient.fetch(homeQuery);
+const { intro, services } = homepage;
 ---
 
 <Layout>
-  <Intro text="Automotive paint booth and shop services for the tri-state area." />
+  <div class="flex flex-col gap-12 md:gap-20">
+    <Intro text="Automotive paint booth and shop services for the tri-state area." />
+    <Services services={services} />
+  </div>
 </Layout>
