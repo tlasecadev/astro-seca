@@ -1,6 +1,10 @@
 ---
 import Intro from "../components/atoms/Intro.astro";
 import Layout from "../layouts/BaseLayout.astro";
+import { sanityClient } from "sanity:client";
+import homeQuery from "../lib/sanity/queries/homeQuery";
+
+const homepage = await sanityClient.fetch(homeQuery);
 ---
 
 <Layout>
