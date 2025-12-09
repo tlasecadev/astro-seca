@@ -1,7 +1,9 @@
 ---
-import Logo from "../atoms/Logo.astro";
+import Logo from "../../svgs/logo.svg";
 ---
 
 <nav class="py-12 flex justify-center">
-  <Logo />
+  <a href="/" class="inline-block">
+    <Logo class="h-8 sm:h-12 md:h-16 lg:h-20 fill-current text-white" />
+  </a>
 </nav>
