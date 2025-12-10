@@ -5,7 +5,7 @@ const { services } = Astro.props;
 ---
 
 <Container>
-  <div class="flex flex-wrap gap-4 justify-center items-center">
+  <div class="flex flex-wrap gap-x-20 gap-y-12 justify-center items-center">
     {services.map((service: String) => <Service text={service} />)}
   </div>
 </Container>
