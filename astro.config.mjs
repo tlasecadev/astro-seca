@@ -4,6 +4,8 @@ import tailwindcss from "@tailwindcss/vite";
 import react from "@astrojs/react";
 import sanity from "@sanity/astro";
 
+import netlify from "@astrojs/netlify";
+
 // https://astro.build/config
 export default defineConfig({
   vite: {
@@ -19,4 +21,6 @@ export default defineConfig({
     }),
     react(),
   ],
+
+  adapter: netlify(),
 });
